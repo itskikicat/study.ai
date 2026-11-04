@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b14"><title>Study.AI — Your study sidekick</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#"><span class="logo">S<span>.</span></span><span>study<span class="violet">.ai</span></span></a>
+  <nav><a href="#platforms">Platforms</a><a href="#how">How it works</a><a href="#tools">Study tools</a></nav>
+  <button class="nav-btn" onclick="document.querySelector('#tools').scrollIntoView({behavior:'smooth'})">Get started <span>↗</span></button>
+</header>
+<main>
+<section class="hero wrap">
+  <div class="hero-copy">
+    <div class="pill"><i></i> YOUR ALL-IN-ONE STUDY SIDEKICK</div>
+    <h1>Make school feel<br><span>a little easier.</span></h1>
+    <p>Practice for your next quiz, understand tricky questions, and turn what you learn into flashcards that actually stick.</p>
+    <div class="actions"><button class="btn-primary" onclick="startQuiz()">Try a practice quiz <b>→</b></button><a class="link" href="#platforms">Explore tools <span>↓</span></a></div>
+    <div class="proof"><span class="proof-icon">✦</span> Built for learning, not just memorizing <span class="dot">•</span> Free to get started</div>
+  </div>
+  <div class="hero-side">
+    <div class="halo"></div><div class="halo halo2"></div>
+    <div class="dashboard">
+      <div class="dash-top"><span class="dash-dot"></span><span class="dash-dot"></span><span class="dash-dot"></span><small>STUDY.AI / OVERVIEW</small><b>•••</b></div>
+      <div class="dash-greeting">Good to see you <span>✦</span><h3>Ready to level up?</h3></div>
+      <div class="progress-card"><div><small>WEEKLY PROGRESS</small><strong>You're on a roll.</strong></div><div class="progress-ring">72<small>%</small></div></div>
+      <div class="dash-row"><div class="dash-tile"><span class="tile-icon purple">▣</span><b>Quiz Arena</b><small>Test your knowledge</small></div><div class="dash-tile"><span class="tile-icon blue">▤</span><b>Flashcards</b><small>Remember more</small></div></div>
+      <div class="dash-bottom"><span class="sparkle">✧</span><div><b>Study smarter</b><small>Your next session is one click away.</small></div><span class="arrow">↗</span></div>
+    </div>
+    <div class="float-tag tag-a">✧ AI study helper</div><div class="float-tag tag-b">✓ Progress saved</div>
+  </div>
+</section>
+<section class="platform-section" id="platforms"><div class="wrap">
+  <div class="center-label">MADE TO HELP YOU PREPARE</div><h2>One place for your <span>study routine.</span></h2>
+  <p class="section-sub">Use Study.AI alongside the learning platforms you already know.</p>
+  <div class="platform-grid">
+    <div class="platform"><span class="platform-symbol kahoot">K!</span><b>Kahoot!</b><small>Quiz practice</small></div>
+    <div class="platform"><span class="platform-symbol blooket">B</span><b>Blooket</b><small>Review questions</small></div>
+    <div class="platform"><span class="platform-symbol quizlet">▤</span><b>Flashcards</b><small>Recall practice</small></div>
+    <div class="platform"><span class="platform-symbol delta">Δ</span><b>Math practice</b><small>Step-by-step help</small></div>
+    <div class="platform"><span class="platform-symbol ai">✦</span><b>Study AI</b><small>Explain a topic</small></div>
+  </div>
+</div></section>
+<section class="wrap section" id="how"><div class="section-heading"><div><div class="eyebrow">HOW IT WORKS</div><h2>Three steps to a <span>better study session.</span></h2></div><p>No complicated setup. Just pick a tool and get started.</p></div>
+<div class="steps">
+  <article><span class="step-no">01</span><div class="step-icon">⌕</div><h3>Choose what to study</h3><p>Pick a topic, try a sample quiz, or add your own questions.</p><div class="step-line"></div></article>
+  <article><span class="step-no">02</span><div class="step-icon">✧</div><h3>Practice with feedback</h3><p>Answer at your own pace and see explanations that make sense.</p><div class="step-line"></div></article>
+  <article><span class="step-no">03</span><div class="step-icon">▤</div><h3>Remember it for later</h3><p>Flip through flashcards and revisit the things you want to master.</p><div class="step-line"></div></article>
+</div></section>
+<section class="wrap section tools-section" id="tools"><div class="section-heading"><div><div class="eyebrow">YOUR STUDY TOOLKIT</div><h2>Pick your <span>next move.</span></h2></div><p>Small study sessions add up. Start with whichever tool you need today.</p></div>
+<div class="tools-grid">
+  <article class="tool-card quiz-card"><div class="tool-top"><span class="tool-icon">▣</span><span class="chip">POPULAR</span></div><h3>Quiz Arena</h3><p>Quick practice questions, instant feedback, and a score at the end.</p><button class="tool-link" onclick="startQuiz()">Start a quiz <span>→</span></button><div class="mini-quiz"><div class="mini-line"></div><div class="mini-options"><i></i><i></i><i></i><i></i></div></div></article>
+  <article class="tool-card flash-card"><div class="tool-top"><span class="tool-icon">▤</span><span class="chip">MEMORY BOOST</span></div><h3>Flashcards</h3><p>Flip through bite-sized cards and review the ideas you find tricky.</p><button class="tool-link" onclick="showFlashcards()">Open flashcards <span>→</span></button><div class="mini-flash">FLIP <b>↻</b></div></article>
+  <article class="tool-card helper-card"><div class="tool-top"><span class="tool-icon">✧</span><span class="chip">AI STUDY COPILOT</span></div><h3>Study AI helper</h3><p>Get a simpler explanation, an example, or a memory tip for a topic.</p><button class="tool-link" onclick="openHelper()">Ask Study AI <span>→</span></button><div class="mini-orb">S<span>.</span></div></article>
+</div></section>
+<section class="cta wrap"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Your next <span>aha moment</span> starts here.</h2><p>Pick a quiz, build a flashcard deck, and make your next study session count.</p></div><button class="btn-primary" onclick="startQuiz()">Let's study <b>→</b></button></section>
+<footer class="wrap"><a class="brand" href="#"><span class="logo">S<span>.</span></span><span>study<span class="violet">.ai</span></span></a><span>Learn at your pace. Build confidence.</span><span>© 2026 Study.AI</span></footer>
+</main>
+<div class="modal hidden" id="modal"><div class="modal-panel"><button class="close" onclick="closeModal()">×</button><div id="modal-content"></div></div></div>
+<script src="/app.js"></script>
+</body></html>
