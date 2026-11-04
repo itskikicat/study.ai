@@ -1,1 +1,0 @@
-const app=require("./api/index");app.listen(process.env.PORT||3000,()=>console.log("Study.AI running"));
